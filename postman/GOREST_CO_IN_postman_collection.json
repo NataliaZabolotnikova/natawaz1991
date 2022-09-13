@@ -1,0 +1,473 @@
+{
+	"info": {
+		"_postman_id": "f80dd124-013a-41a1-a587-85f9f82e5146",
+		"name": "GOREST.CO.IN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21800480"
+	},
+	"item": [
+		{
+			"name": "GET/users (200)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d996b54173f0caa6e23c478e6eef88f633eece899917e75acccc7a233c7f85a0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/public/v2/users",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/page=13 (200)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d996b54173f0caa6e23c478e6eef88f633eece899917e75acccc7a233c7f85a0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/public/v2/users?page=13",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/nobody (422)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d996b54173f0caa6e23c478e6eef88f633eece899917e75acccc7a233c7f85a0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/public/v2/users",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/users (201)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Anna Manna\",\r\n    \"email\": \"vehit58521@otodir.com\",\r\n    \"gender\": \"female\",\r\n    \"status\": \"inactive\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/public/v2/users",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/4617 (200)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d996b54173f0caa6e23c478e6eef88f633eece899917e75acccc7a233c7f85a0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/public/v2/users/4617",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"4617"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/id=4617 (200)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d996b54173f0caa6e23c478e6eef88f633eece899917e75acccc7a233c7f85a0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/public/v2/users?id=4617",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4617"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/name=anna_manna (200)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d996b54173f0caa6e23c478e6eef88f633eece899917e75acccc7a233c7f85a0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/public/v2/users?name=anna_manna",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "anna_manna"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT/users/4617 (200)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d996b54173f0caa6e23c478e6eef88f633eece899917e75acccc7a233c7f85a0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Panna Cotta\",\r\n    \"email\": \"boxop42771@seinfaq.com\",\r\n    \"gender\": \"female\",\r\n    \"status\": \"inactive\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/public/v2/users/4617",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"4617"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/4617 (200)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/public/v2/users/4617",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"4617"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH/users/4617 (200)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d996b54173f0caa6e23c478e6eef88f633eece899917e75acccc7a233c7f85a0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"vehit58521@otodir.com\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/public/v2/users/4617",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"4617"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/4617 (200)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/public/v2/users/4617",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"4617"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE/users/4617",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d996b54173f0caa6e23c478e6eef88f633eece899917e75acccc7a233c7f85a0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/public/v2/users/4617",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"4617"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/4617",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/public/v2/users/4617",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"4617"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "d996b54173f0caa6e23c478e6eef88f633eece899917e75acccc7a233c7f85a0",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "d996b54173f0caa6e23c478e6eef88f633eece899917e75acccc7a233c7f85a0",
+			"type": "string"
+		},
+		{
+			"key": "URL",
+			"value": "https://gorest.co.in/"
+		}
+	]
+}
